@@ -28,9 +28,6 @@ ADD license.hdiv /usr/local/tomcat/hdiv/
 # Copy the agent jar
 ADD hdiv-ee-agent.jar /usr/local/tomcat/hdiv/
 
-#
-USER non-root
-
 # Run Tomcat and enjoy!
 CMD export JAVA_OPTS="-javaagent:hdiv/hdiv-ee-agent.jar \
   -Dhdiv.config.dir=hdiv/ \
